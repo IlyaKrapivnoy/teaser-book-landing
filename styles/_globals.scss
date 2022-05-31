@@ -14,3 +14,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: toRem(1080);
+  width: 100%;
+
+  @include media-breakpoint-down(lg) {
+      padding: toRem(0 24);
+  }
+
+  @include media-breakpoint-down(sm) {
+      padding: toRem(0 20);
+  }
+}
