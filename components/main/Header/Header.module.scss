@@ -10,6 +10,15 @@
   .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      transition: fill .3s ease;
+
+       &:hover {
+         fill: $blue;
+       }
+    }
 
     .list {
       display: flex;

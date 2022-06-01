@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Header.module.scss';
+import Logo from './Logo';
 
 const Header = () => {
     const navbarItems = [
@@ -14,7 +15,9 @@ const Header = () => {
         <div className={styles.headerWrapper}>
             <div className={'container'}>
                 <div className={styles.header}>
-                    <div className={styles.logo}>logo</div>
+                    <div className={styles.logo}>
+                        <Logo dimensions={{ height: 24, width: 'auto' }} />
+                    </div>
                     <div className={styles.navbar}>
                         <ul className={styles.list}>
                             {navbarItems.map((navItem) => (
