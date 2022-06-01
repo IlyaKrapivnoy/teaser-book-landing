@@ -10,5 +10,22 @@
   .header {
     display: flex;
     justify-content: space-between;
+
+    .list {
+      display: flex;
+      list-style: none;
+      margin: 0;
+
+      .listItem {
+        margin: toRem(0 20);
+        cursor: pointer;
+        font-weight: 700;
+        transition: color .3s ease;
+
+        &:hover {
+          color: $hoverBlue;
+        }
+      }
+    }
   }
 }

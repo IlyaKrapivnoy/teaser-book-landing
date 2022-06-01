@@ -4,6 +4,7 @@ $black: #000;
 $red: #ff0000;
 $gray: #656565;
 $softGray: #d9d9d9;
+$blue: #47b8d7;
 
 // Background
 $backgroundWhite: $white;
@@ -13,7 +14,7 @@ $textWhite: $white;
 $textBlack: $black;
 
 // Hover
-
+$hoverBlue: $blue;
 
 // Buttons
 
@@ -22,7 +23,7 @@ $borderWhite: $white;
 $borderSoftGray: $softGray;
 
 // General
-$cursorColor: #47b8d7;
+$cursorColor: $blue;
 
 // Fonts
 $base-font-size: 16px;
