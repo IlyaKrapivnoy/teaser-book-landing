@@ -6,7 +6,7 @@ import styles from './Layout.module.scss';
 const Layout = ({ children }: { children: ReactNode }) => {
     return (
         <div>
-            <div className={styles.colorTest}>
+            <div className={styles.contentWrapper}>
                 <Header />
                 {children}
             </div>

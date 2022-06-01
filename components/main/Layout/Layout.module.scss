@@ -1,5 +1,6 @@
 @use 'styles/variables' as *;
 
-.colorTest {
-    color: $red;
+.contentWrapper {
+  background-color: $white;
+  min-height: calc(100vh - 70px);
 }
