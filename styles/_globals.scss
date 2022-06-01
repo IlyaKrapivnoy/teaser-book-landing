@@ -17,7 +17,7 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: toRem(1080);
+  max-width: toRem(1024);
   width: 100%;
 
   @include media-breakpoint-down(lg) {

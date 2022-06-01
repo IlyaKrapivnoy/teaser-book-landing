@@ -1,0 +1,14 @@
+@use 'styles/variables' as *;
+@use 'styles/functions' as *;
+@use 'styles/breakpoints' as *;
+
+.headerWrapper {
+  background-color: $backgroundWhite;
+  padding: toRem(40 0);
+  border-bottom: 1px dashed $borderSoftGray;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
