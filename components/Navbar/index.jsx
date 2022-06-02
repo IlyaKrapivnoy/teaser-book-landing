@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from './Header.module.scss';
+import styles from './Navbar.module.scss';
 import { MAIN_PAGE_FOR_ME } from '../../paths';
 import Icon from '../../icons';
 
-const Header = () => {
+const Navbar = () => {
     const navbarItems = [
         { id: '#about', title: 'About' },
         { id: '#chapters', title: 'Chapters' },
@@ -14,9 +14,9 @@ const Header = () => {
     ];
 
     return (
-        <div className={styles.headerWrapper}>
+        <div className={styles.navbarWrapper}>
             <div className={'container'}>
-                <div className={styles.header}>
+                <div className={styles.navbar}>
                     <div className={styles.logo}>
                         <Link href={MAIN_PAGE_FOR_ME}>
                             <a className={styles.logo}>
@@ -48,4 +48,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Navbar;
