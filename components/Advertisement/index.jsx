@@ -1,7 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
+import { useSession } from 'next-auth/react';
 
 const Advertisement = () => {
+    const { data: session, status } = useSession();
+    console.log({ session, status });
+
     return (
         <>
             <Head>
@@ -9,7 +13,7 @@ const Advertisement = () => {
                 <meta name='description' content='Description of a new book' />
             </Head>
 
-            <div>Unauthorized content</div>
+            <div>Welcome, {session ? session.user.name : 'user'}</div>
         </>
     );
 };

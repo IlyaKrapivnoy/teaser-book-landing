@@ -16,7 +16,6 @@ const Navbar = () => {
     ];
 
     const { data: session, status } = useSession();
-    console.log({ data: session, status });
 
     const handleSignIn = (e) => {
         e.preventDefault();

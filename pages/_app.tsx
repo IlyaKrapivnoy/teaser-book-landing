@@ -3,9 +3,9 @@ import { SessionProvider } from 'next-auth/react';
 import Layout from '../components/Layout';
 import '../styles/main.scss';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
     return (
-        <SessionProvider>
+        <SessionProvider session={session}>
             <Layout>
                 <Component {...pageProps} />
             </Layout>

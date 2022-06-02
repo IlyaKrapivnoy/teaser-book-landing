@@ -4,7 +4,6 @@ import { useSession, signIn } from 'next-auth/react';
 
 function Home() {
     const { status } = useSession();
-    console.log({ status });
 
     useEffect(() => {
         if (status === 'unauthenticated') {
