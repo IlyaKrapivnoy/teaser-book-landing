@@ -1,4 +1,8 @@
-// Theme colors
+// Fonts variables
+$base-font-size: 16px;
+$base-font-family: "Lato", sans-serif;
+
+// Basic colors variables
 $white: #fff;
 $black: #000;
 $red: #ff0000;
@@ -6,26 +10,23 @@ $gray: #656565;
 $softGray: #d9d9d9;
 $blue: #47b8d7;
 
-// Background
+// General variables
+$cursorColor: $blue;
+
+// Background variables
 $backgroundWhite: $white;
 
-// Text
+// Text variables
 $textWhite: $white;
 $textBlack: $black;
 $textBlue: $blue;
 
-// Hover
-$hoverBlue: $blue;
-
-// Buttons
-
-// Border
+// Border variables
 $borderWhite: $white;
+$borderGray: $gray;
 $borderSoftGray: $softGray;
 
-// General
-$cursorColor: $blue;
+// Hover variables
+$hoverBlue: $blue;
 
-// Fonts
-$base-font-size: 16px;
-$base-font-family: "Lato", sans-serif;
+

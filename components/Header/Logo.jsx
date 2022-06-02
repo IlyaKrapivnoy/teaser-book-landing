@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import Icon from '../../icons';
 import styles from './Header.module.scss';
-import { MAIN_PAGE_FOR_ME } from '../../../paths';
+import { MAIN_PAGE_FOR_ME } from '../../paths';
 
 const MainLogo = ({ sizes }) => {
     const handleLogoClick = () => {

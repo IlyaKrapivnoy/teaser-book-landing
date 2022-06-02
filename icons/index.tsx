@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Logo from '../../svgs/logo.svg';
+import Logo from '../svgs/logo.svg';
 
-import { IIcon } from '../../types';
+import { IIcon } from '../types';
 
 const LOGO = 'logo';
 
