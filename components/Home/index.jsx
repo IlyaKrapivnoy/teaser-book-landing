@@ -11,7 +11,7 @@ function Home() {
                 />
             </Head>
 
-            <main>hi</main>
+            <main>main content</main>
         </div>
     );
 }
