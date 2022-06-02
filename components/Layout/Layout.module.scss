@@ -1,0 +1,6 @@
+@use '../../styles/variables' as *;
+
+.contentWrapper {
+  background-color: $white;
+  min-height: calc(100vh - 70px);
+}

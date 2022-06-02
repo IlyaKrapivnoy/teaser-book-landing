@@ -17,7 +17,7 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: toRem(1080);
+  max-width: toRem(1024);
   width: 100%;
 
   @include media-breakpoint-down(lg) {
@@ -26,5 +26,23 @@ a {
 
   @include media-breakpoint-down(sm) {
       padding: toRem(0 20);
+  }
+}
+
+.loginBtn {
+  padding: 10px 40px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  border: 2px solid $borderGray;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: $blue;
+    color: $textWhite;
+    border: 2px solid $black;
   }
 }
