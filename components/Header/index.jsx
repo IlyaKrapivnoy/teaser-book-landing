@@ -1,6 +1,8 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from './Header.module.scss';
-import Logo from './Logo';
+import { MAIN_PAGE_FOR_ME } from '../../paths';
+import Icon from '../../icons';
 
 const Header = () => {
     const navbarItems = [
@@ -16,7 +18,14 @@ const Header = () => {
             <div className={'container'}>
                 <div className={styles.header}>
                     <div className={styles.logo}>
-                        <Logo sizes={{ height: 24, width: 'auto' }} />
+                        <Link href={MAIN_PAGE_FOR_ME}>
+                            <a className={styles.logo}>
+                                <Icon
+                                    name={Icon.LOGO}
+                                    sizes={{ height: 24, width: 'auto' }}
+                                />
+                            </a>
+                        </Link>
                     </div>
                     <div className={styles.navbar}>
                         <ul className={styles.list}>
