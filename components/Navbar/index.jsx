@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { signIn, signOut } from 'next-auth/react';
 import styles from './Navbar.module.scss';
 import { MAIN_PAGE_FOR_ME } from '../../paths';
 import Icon from '../../icons';
@@ -12,6 +13,16 @@ const Navbar = () => {
         { id: '#author', title: 'Author' },
         { id: '#contact', title: 'Contact' },
     ];
+
+    const handleSignIn = (e) => {
+        e.preventDefault();
+        signIn('github');
+    };
+
+    const handleSignOut = (e) => {
+        e.preventDefault();
+        signOut();
+    };
 
     return (
         <div className={styles.navbarWrapper}>
@@ -40,7 +51,22 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className={styles.btnSection}>
-                        <button className='loginBtn'>Log In</button>
+                        <Link href='/api/auth/signin'>
+                            <a
+                                className='signinBtn'
+                                onClick={(e) => handleSignIn(e)}
+                            >
+                                Sign In
+                            </a>
+                        </Link>
+                        <Link href='/api/auth/signout'>
+                            <a
+                                className='signinBtn'
+                                onClick={(e) => handleSignOut(e)}
+                            >
+                                Sign Out
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>
