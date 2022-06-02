@@ -16,7 +16,7 @@ const Header = () => {
             <div className={'container'}>
                 <div className={styles.header}>
                     <div className={styles.logo}>
-                        <Logo dimensions={{ height: 24, width: 'auto' }} />
+                        <Logo sizes={{ height: 24, width: 'auto' }} />
                     </div>
                     <div className={styles.navbar}>
                         <ul className={styles.list}>
@@ -30,7 +30,9 @@ const Header = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className={styles.socialIcons}>socialIcons</div>
+                    <div className={styles.btnSection}>
+                        <button className='loginBtn'>Log In</button>
+                    </div>
                 </div>
             </div>
         </div>

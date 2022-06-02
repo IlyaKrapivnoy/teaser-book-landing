@@ -6,12 +6,12 @@ import { IIcon } from '../../types';
 
 const LOGO = 'logo';
 
-const Icon = ({ name, fill, dimensions, className, onClick }: IIcon) => {
+const Icon = ({ name, fill, sizes, className, onClick }: IIcon) => {
     switch (name) {
         case LOGO:
             return (
                 <Logo
-                    {...dimensions}
+                    {...sizes}
                     fill={fill}
                     className={className}
                     onClick={onClick}

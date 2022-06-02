@@ -6,7 +6,7 @@ export type IconDimensions = {
 export interface IIcon {
     name?: string;
     fill?: string;
-    dimensions?: IconDimensions;
+    sizes?: IconDimensions;
     className?: string;
     onClick?: () => void;
 }

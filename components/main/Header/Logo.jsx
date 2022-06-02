@@ -4,7 +4,7 @@ import Icon from '../../icons';
 import styles from './Header.module.scss';
 import { MAIN_PAGE_FOR_ME } from '../../../paths';
 
-const MainLogo = ({ dimensions }) => {
+const MainLogo = ({ sizes }) => {
     const handleLogoClick = () => {
         console.log('logo click');
     };
@@ -15,7 +15,7 @@ const MainLogo = ({ dimensions }) => {
                 <a className={styles.logo}>
                     <Icon
                         name={Icon.LOGO}
-                        dimensions={dimensions}
+                        sizes={sizes}
                         onClick={handleLogoClick}
                     />
                 </a>
