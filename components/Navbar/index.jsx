@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { signIn, signOut } from 'next-auth/react';
+import { signIn, signOut, useSession } from 'next-auth/react';
+import classNames from 'classnames';
 import styles from './Navbar.module.scss';
 import { MAIN_PAGE_FOR_ME } from '../../paths';
 import Icon from '../../icons';
@@ -13,6 +14,9 @@ const Navbar = () => {
         { id: '#author', title: 'Author' },
         { id: '#contact', title: 'Contact' },
     ];
+
+    const { data: session, status } = useSession();
+    console.log({ data: session, status });
 
     const handleSignIn = (e) => {
         e.preventDefault();
@@ -50,23 +54,34 @@ const Navbar = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className={styles.btnSection}>
-                        <Link href='/api/auth/signin'>
-                            <a
-                                className='signinBtn'
-                                onClick={(e) => handleSignIn(e)}
-                            >
-                                Sign In
-                            </a>
-                        </Link>
-                        <Link href='/api/auth/signout'>
-                            <a
-                                className='signinBtn'
-                                onClick={(e) => handleSignOut(e)}
-                            >
-                                Sign Out
-                            </a>
-                        </Link>
+                    <div
+                        className={classNames(
+                            styles.btnSection,
+                            !session && status === 'loading'
+                                ? styles.loading
+                                : styles.loaded
+                        )}
+                    >
+                        {!session && status !== 'authenticated' && (
+                            <Link href='/api/auth/signin'>
+                                <a
+                                    className='signinBtn'
+                                    onClick={(e) => handleSignIn(e)}
+                                >
+                                    Sign In
+                                </a>
+                            </Link>
+                        )}
+                        {session && status !== 'unauthenticated' && (
+                            <Link href='/api/auth/signout'>
+                                <a
+                                    className='signinBtn'
+                                    onClick={(e) => handleSignOut(e)}
+                                >
+                                    Sign Out
+                                </a>
+                            </Link>
+                        )}
                     </div>
                 </div>
             </div>
