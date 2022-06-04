@@ -22,7 +22,7 @@ export default NextAuth({
             }
             return token;
         },
-        async session(session, token) {
+        async session({ session, token }) {
             session.user.id = token.id;
             return session;
         },
