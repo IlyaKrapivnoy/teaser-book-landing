@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './Footer.module.scss';
-import Navbar from '../Navbar';
 import Icon from '../../icons';
 import socialIconsItems from '../../data/socialIconsItems';
+import NavbarItems from '../Navbar/NavbarItems';
 
 const Footer = () => {
     return (
@@ -11,7 +11,7 @@ const Footer = () => {
             <div className={'container'}>
                 <div className={styles.footer}>
                     <div className={styles.top}>
-                        <Navbar
+                        <NavbarItems
                             classNameUl={styles.list}
                             classNameLi={styles.listItem}
                         />

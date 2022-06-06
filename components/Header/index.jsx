@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './Header.module.scss';
 import { MAIN_PAGE_FOR_ME } from '../../paths';
 import Icon from '../../icons';
-import Navbar from '../Navbar';
+import NavbarItems from '../Navbar/NavbarItems';
 
 const Header = () => {
     return (
@@ -21,7 +21,7 @@ const Header = () => {
                         </Link>
                     </div>
 
-                    <Navbar
+                    <NavbarItems
                         classNameUl={styles.list}
                         classNameLi={styles.listItem}
                     />

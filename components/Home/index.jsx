@@ -1,6 +1,20 @@
 import Head from 'next/head';
+import { useEffect } from 'react';
+import { useSession, signIn } from 'next-auth/react';
 
 function Home() {
+    const { status } = useSession();
+
+    useEffect(() => {
+        if (status === 'unauthenticated') {
+            signIn();
+        }
+    }, [status]);
+
+    if (status !== 'authenticated') {
+        return <h2>Loading...</h2>;
+    }
+
     return (
         <div>
             <Head>
@@ -11,7 +25,7 @@ function Home() {
                 />
             </Head>
 
-            <main>hi</main>
+            <main>main content</main>
         </div>
     );
 }
