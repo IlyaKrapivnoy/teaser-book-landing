@@ -69,7 +69,8 @@ const Footer = () => {
                             )}
                         </div>
                         <p className={styles.copyright}>
-                            &#169; Copyright Ilya K. All rights reserved 2021
+                            &#169; Copyright Ilya K. All rights reserved{' '}
+                            {new Date().getFullYear()}
                         </p>
                     </div>
                 </div>
