@@ -3,16 +3,9 @@ import Link from 'next/link';
 import styles from './Header.module.scss';
 import { MAIN_PAGE_FOR_ME } from '../../paths';
 import Icon from '../../icons';
+import navbarItems from '../../data/navItems';
 
 const Header = () => {
-    const navbarItems = [
-        { id: '#about', title: 'About' },
-        { id: '#chapters', title: 'Chapters' },
-        { id: '#reviews', title: 'Reviews' },
-        { id: '#author', title: 'Author' },
-        { id: '#contact', title: 'Contact' },
-    ];
-
     return (
         <div className={styles.headerWrapper}>
             <div className={'container'}>
