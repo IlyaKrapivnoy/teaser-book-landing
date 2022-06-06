@@ -3,7 +3,6 @@ import Link from 'next/link';
 import styles from './Header.module.scss';
 import { MAIN_PAGE_FOR_ME } from '../../paths';
 import Icon from '../../icons';
-import navbarItems from '../../data/navItems';
 import Navbar from '../Navbar';
 
 const Header = () => {
