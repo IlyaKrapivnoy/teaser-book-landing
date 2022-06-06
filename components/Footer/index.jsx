@@ -10,8 +10,36 @@ const logoItems = [
         id: 1,
         href: MAIN_PAGE_FOR_ME,
         logoClassName: 'styles.logo',
-        name: Icon.LOGO,
-        sizes: { height: 24, width: 'auto' },
+        name: Icon.SNAPCHAT,
+        sizes: { height: 40, width: 'auto' },
+    },
+    {
+        id: 2,
+        href: MAIN_PAGE_FOR_ME,
+        logoClassName: 'styles.logo',
+        name: Icon.FACEBOOK,
+        sizes: { height: 40, width: 'auto' },
+    },
+    {
+        id: 3,
+        href: MAIN_PAGE_FOR_ME,
+        logoClassName: 'styles.logo',
+        name: Icon.LINKEDIN,
+        sizes: { height: 40, width: 'auto' },
+    },
+    {
+        id: 4,
+        href: MAIN_PAGE_FOR_ME,
+        logoClassName: 'styles.logo',
+        name: Icon.SKYPE,
+        sizes: { height: 40, width: 'auto' },
+    },
+    {
+        id: 5,
+        href: MAIN_PAGE_FOR_ME,
+        logoClassName: 'styles.logo',
+        name: Icon.TWITTER,
+        sizes: { height: 40, width: 'auto' },
     },
 ];
 
