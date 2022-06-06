@@ -4,6 +4,7 @@ import styles from './Header.module.scss';
 import { MAIN_PAGE_FOR_ME } from '../../paths';
 import Icon from '../../icons';
 import navbarItems from '../../data/navItems';
+import Navbar from '../Navbar';
 
 const Header = () => {
     return (
@@ -20,18 +21,12 @@ const Header = () => {
                             </a>
                         </Link>
                     </div>
-                    <div className={styles.navbar}>
-                        <ul className={styles.list}>
-                            {navbarItems.map((navItem) => (
-                                <li
-                                    key={navItem.id}
-                                    className={styles.listItem}
-                                >
-                                    {navItem.title}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+
+                    <Navbar
+                        classNameUl={styles.list}
+                        classNameLi={styles.listItem}
+                    />
+
                     <div className={styles.btnSection}>
                         <button className='loginBtn'>Log In</button>
                     </div>
