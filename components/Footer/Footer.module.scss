@@ -4,7 +4,7 @@
 
 .footerWrapper {
   background-color: $backgroundWhite;
-  padding: toRem(40 0);
+  padding: toRem(80 0 10);
   border-top: 1px dashed $borderSoftGray;
 
   .footer {
@@ -37,6 +37,19 @@
     }
     .bottom {
       display: flex;
+      flex-direction: column;
+      width: 500px;
+      padding: toRem(30 0);
+
+      .icons {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .copyright {
+        text-align: center;
+        padding: toRem(20 0);
+      }
     }
   }
 }

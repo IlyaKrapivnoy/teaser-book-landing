@@ -2,42 +2,41 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './Footer.module.scss';
 import Navbar from '../Navbar';
-import { MAIN_PAGE_FOR_ME } from '../../paths';
 import Icon from '../../icons';
 
-const logoItems = [
+const socialIconsItems = [
     {
         id: 1,
-        href: MAIN_PAGE_FOR_ME,
-        logoClassName: 'styles.logo',
+        href: 'https://www.snapchat.com/',
+        logoClassName: 'styles.socialIcon',
         name: Icon.SNAPCHAT,
         sizes: { height: 40, width: 'auto' },
     },
     {
         id: 2,
-        href: MAIN_PAGE_FOR_ME,
-        logoClassName: 'styles.logo',
+        href: 'https://www.facebook.com/',
+        logoClassName: 'styles.socialIcon',
         name: Icon.FACEBOOK,
         sizes: { height: 40, width: 'auto' },
     },
     {
         id: 3,
-        href: MAIN_PAGE_FOR_ME,
-        logoClassName: 'styles.logo',
+        href: 'https://www.linkedin.com/',
+        logoClassName: 'styles.socialIcon',
         name: Icon.LINKEDIN,
         sizes: { height: 40, width: 'auto' },
     },
     {
         id: 4,
-        href: MAIN_PAGE_FOR_ME,
-        logoClassName: 'styles.logo',
+        href: 'https://www.skype.com/',
+        logoClassName: 'styles.socialIcon',
         name: Icon.SKYPE,
         sizes: { height: 40, width: 'auto' },
     },
     {
         id: 5,
-        href: MAIN_PAGE_FOR_ME,
-        logoClassName: 'styles.logo',
+        href: 'https://twitter.com/',
+        logoClassName: 'styles.socialIcon',
         name: Icon.TWITTER,
         sizes: { height: 40, width: 'auto' },
     },
@@ -55,15 +54,23 @@ const Footer = () => {
                         />
                     </div>
                     <div className={styles.bottom}>
-                        {logoItems.map(
-                            ({ href, logoClassName, name, sizes, id }) => (
-                                <Link href={href} key={id}>
-                                    <a className={logoClassName}>
-                                        <Icon name={name} sizes={sizes} />
-                                    </a>
-                                </Link>
-                            )
-                        )}
+                        <div className={styles.icons}>
+                            {socialIconsItems.map(
+                                ({ href, logoClassName, name, sizes, id }) => (
+                                    <Link href={href} key={id}>
+                                        <a
+                                            className={logoClassName}
+                                            target='_blank'
+                                        >
+                                            <Icon name={name} sizes={sizes} />
+                                        </a>
+                                    </Link>
+                                )
+                            )}
+                        </div>
+                        <p className={styles.copyright}>
+                            &#169; Copyright Ilya K. All rights reserved 2021
+                        </p>
                     </div>
                 </div>
             </div>
