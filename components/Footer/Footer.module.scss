@@ -1,0 +1,55 @@
+@use '../../styles/variables' as *;
+@use '../../styles/functions' as *;
+@use '../../styles/breakpoints' as *;
+
+.footerWrapper {
+  background-color: $backgroundWhite;
+  padding: toRem(80 0 10);
+  border-top: 1px dashed $borderSoftGray;
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .top {
+      .list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+
+        .listItem {
+          margin: toRem(0 20);
+          cursor: pointer;
+          font-weight: 700;
+          transition: color .3s ease;
+          text-transform: uppercase;
+          padding-bottom: toRem(10);
+
+          &:hover {
+            color: $hoverBlue;
+          }
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      padding: toRem(30 0);
+
+      .icons {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .copyright {
+        text-align: center;
+        padding: toRem(20 0);
+      }
+    }
+  }
+}
