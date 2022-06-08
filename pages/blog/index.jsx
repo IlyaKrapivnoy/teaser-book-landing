@@ -3,7 +3,6 @@ import { getSession, useSession } from 'next-auth/react';
 
 const Blog = ({ data }) => {
     const { data: session } = useSession();
-    console.log({ session });
 
     return (
         <>
@@ -16,7 +15,6 @@ export default Blog;
 
 export async function getServerSideProps(context) {
     const session = await getSession(context);
-    console.log(session);
 
     if (!session) {
         return {
