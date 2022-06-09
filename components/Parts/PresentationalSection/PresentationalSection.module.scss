@@ -4,9 +4,12 @@
 
 .wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .textPart {
     color: $darkGray;
+    width: 50%;
 
     .supText {
       color: $gray;

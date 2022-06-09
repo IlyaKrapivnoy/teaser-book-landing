@@ -1,5 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './PresentationalSection.module.scss';
+import BookCoverImg from '../../../public/book-cover.png';
 
 const PresentationalSection = () => {
     return (
@@ -23,7 +25,16 @@ const PresentationalSection = () => {
                         * eBook includes iBooks, PDF & ePub versions
                     </p>
                 </div>
-                <div className={styles.picturePart}>pic</div>
+                <div className={styles.picturePart}>
+                    <div className='picWrapper'>
+                        <Image
+                            src={BookCoverImg}
+                            alt={'Book cover'}
+                            width={370}
+                            height={503}
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     );
