@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './PresentationalSection.module.scss';
 import BookCoverImg from '../../../public/book-cover.png';
+import Button from '../../Buttons/Button';
+import buttonStyles from '../../Buttons/Button/Button.module.scss';
 
 const PresentationalSection = () => {
     return (
@@ -20,7 +22,10 @@ const PresentationalSection = () => {
                         that don’t just deliver on product perfection, but also
                         delivers on time.
                     </p>
-                    <button>Buy now for $14.99</button>
+                    <Button
+                        title={'Buy now for $14.99'}
+                        className={buttonStyles.red}
+                    />
                     <p className={styles.footnote}>
                         * eBook includes iBooks, PDF & ePub versions
                     </p>
