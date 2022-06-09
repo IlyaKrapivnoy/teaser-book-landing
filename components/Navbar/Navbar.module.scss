@@ -1,6 +1,6 @@
-@use '../../styles/variables' as *;
-@use '../../styles/functions' as *;
-@use '../../styles/breakpoints' as *;
+@use 'styles/variables' as *;
+@use 'styles/functions' as *;
+@use 'styles/breakpoints' as *;
 
 .navbarWrapper {
   background-color: $backgroundWhite;
