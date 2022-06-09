@@ -26,14 +26,12 @@ const PresentationalSection = () => {
                     </p>
                 </div>
                 <div className={styles.picturePart}>
-                    <div className='picWrapper'>
-                        <Image
-                            src={BookCoverImg}
-                            alt={'Book cover'}
-                            width={370}
-                            height={503}
-                        />
-                    </div>
+                    <Image
+                        src={BookCoverImg}
+                        alt={'Book cover'}
+                        width={370}
+                        height={503}
+                    />
                 </div>
             </div>
         </div>
