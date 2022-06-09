@@ -4,4 +4,30 @@
 
 .wrapper {
   display: flex;
+
+  .textPart {
+    color: $darkGray;
+
+    .supText {
+      color: $gray;
+      font-weight: 700;
+
+      & > span {
+        color: $blue;
+      }
+    }
+
+    & > h1 {
+      font-size: toRem(60);
+      color: $darkBlue;
+    }
+
+    .subText {
+      font-size: toRem(18);
+    }
+
+    .footnote {
+      font-size: toRem(14);
+    }
+  }
 }
