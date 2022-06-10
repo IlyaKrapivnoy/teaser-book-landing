@@ -1,11 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
+import cn from 'classnames';
 import KindleImg from '../../../public/kindle.png';
 
 const AboutSection = () => {
     return (
         <div className='container'>
-            <div className={'wrapper'}>
+            <div className={cn('wrapper', 'wrapperReverese')}>
                 <div className={'picturePart'}>
                     <Image
                         src={KindleImg}

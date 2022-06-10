@@ -117,3 +117,9 @@ a {
     }
   }
 }
+
+.wrapperReverese {
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+}
