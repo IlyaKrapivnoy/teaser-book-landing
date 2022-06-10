@@ -46,3 +46,80 @@ a {
     border: 2px solid $black;
   }
 }
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: toRem(70 0);
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column-reverse;
+    padding: toRem(40 0);
+  }
+
+  .textPart {
+    color: $darkGray;
+    width: 50%;
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+
+    .supText {
+      color: $gray;
+      font-weight: 700;
+
+      & > span {
+        color: $blue;
+      }
+    }
+
+    & > h1 {
+      font-size: toRem(60);
+      color: $darkBlue;
+
+      @include media-breakpoint-down(md) {
+        font-size: toRem(40);
+      }
+    }
+
+    & > h2 {
+      font-size: toRem(40);
+      color: $darkBlue;
+
+      @include media-breakpoint-down(md) {
+        font-size: toRem(22);
+      }
+    }
+
+    & > h3 {
+      font-size: toRem(24);
+      color: $darkBlue;
+
+      @include media-breakpoint-down(md) {
+        font-size: toRem(18);
+      }
+    }
+
+    .subText {
+      font-size: toRem(18);
+    }
+
+    .footnote {
+      font-size: toRem(14);
+    }
+  }
+
+  .picturePart {
+    @include media-breakpoint-down(md) {
+      padding-bottom: toRem(30);
+    }
+  }
+}
+
+.wrapperReverese {
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+}
