@@ -84,6 +84,24 @@ a {
       }
     }
 
+    & > h2 {
+      font-size: toRem(40);
+      color: $darkBlue;
+
+      @include media-breakpoint-down(md) {
+        font-size: toRem(22);
+      }
+    }
+
+    & > h3 {
+      font-size: toRem(24);
+      color: $darkBlue;
+
+      @include media-breakpoint-down(md) {
+        font-size: toRem(18);
+      }
+    }
+
     .subText {
       font-size: toRem(18);
     }
