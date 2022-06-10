@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 import { useSession, signIn } from 'next-auth/react';
 import PresentationalSection from '../Parts/PresentationalSection/PresentationalSection';
+import AboutSection from '../Parts/AboutSection';
 
 function Home() {
     const { status } = useSession();
@@ -28,6 +29,7 @@ function Home() {
 
             <main>
                 <PresentationalSection />
+                <AboutSection />
             </main>
         </div>
     );
