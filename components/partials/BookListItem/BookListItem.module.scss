@@ -1,0 +1,30 @@
+@use 'styles/variables' as *;
+@use 'styles/functions' as *;
+@use 'styles/breakpoints' as *;
+
+.card {
+  display: flex;
+  margin: toRem(20 10);
+
+  .iconSide {
+    display: flex;
+    align-items: center;
+    padding: toRem(20);
+
+    @include media-breakpoint-down(sm) {
+      padding: toRem(10);
+    }
+  }
+
+  .title {
+    color: $textBlue;
+    font-size: toRem(22);
+    font-weight: 700;
+    padding-bottom: toRem(12);
+  }
+
+  .description {
+    color: $gray;
+    font-size: toRem(14);
+  }
+}

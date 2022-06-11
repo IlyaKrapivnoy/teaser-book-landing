@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import classNames from 'classnames';
 import styles from './Navbar.module.scss';
-import { MAIN_PAGE_FOR_ME } from '../../paths';
-import Icon from '../../icons';
+import { MAIN_PAGE_FOR_ME } from '../../../paths';
+import Icon from '../../../icons';
 
 const Navbar = () => {
     const navbarItems = [

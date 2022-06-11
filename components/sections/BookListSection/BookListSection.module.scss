@@ -1,0 +1,23 @@
+@use 'styles/variables' as *;
+@use 'styles/functions' as *;
+@use 'styles/breakpoints' as *;
+
+.booklistSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bookListWrapper {
+  display: flex;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+
+  .col1 {
+    @include media-breakpoint-down(md) {
+      margin-bottom: toRem(-20);
+    }
+  }
+}

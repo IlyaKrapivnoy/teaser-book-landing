@@ -1,5 +1,5 @@
 import React from 'react';
-import navbarItems from '../../data/navItems';
+import navbarItems from '../../../data/navItems';
 
 const NavbarItems = ({ classNameUl, classNameLi }) => {
     return (
