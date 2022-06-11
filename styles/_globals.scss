@@ -123,3 +123,17 @@ a {
     flex-direction: column;
   }
 }
+
+.titleField {
+  text-align: center;
+
+  .title {
+    font-size: toRem(40);
+    color: $darkBlue;
+  }
+
+  .description {
+    color: $gray;
+    font-size: toRem(18);
+  }
+}

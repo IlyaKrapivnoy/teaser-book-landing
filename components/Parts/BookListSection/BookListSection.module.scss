@@ -1,0 +1,8 @@
+@use 'styles/variables' as *;
+@use 'styles/functions' as *;
+
+.booklistSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
