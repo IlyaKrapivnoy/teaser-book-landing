@@ -1,7 +1,7 @@
 export const bookListItems = [
     {
         id: 1,
-        title: 'description',
+        title: 'UX design',
         description:
             'Tips on scouting the city and making the most out of your three-month tourist visa.',
     },
