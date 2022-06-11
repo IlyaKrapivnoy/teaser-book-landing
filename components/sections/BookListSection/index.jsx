@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './BookListSection.module.scss';
+import BookListItem from '../../partials/BookListItem';
 
 const BookListSection = () => {
     return (
@@ -13,7 +14,12 @@ const BookListSection = () => {
                     </span>
                 </div>
             </div>
-            <div className='wrapper'>ss</div>
+            <div className='wrapper'>
+                <BookListItem
+                    title='Design principles'
+                    description='Tips on scouting the city and making the most out of your three-month tourist visa.'
+                />
+            </div>
         </div>
     );
 };
