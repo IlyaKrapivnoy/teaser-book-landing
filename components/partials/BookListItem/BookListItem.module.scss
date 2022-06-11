@@ -10,6 +10,10 @@
     display: flex;
     align-items: center;
     padding: toRem(20);
+
+    @include media-breakpoint-down(sm) {
+      padding: toRem(10);
+    }
   }
 
   .title {

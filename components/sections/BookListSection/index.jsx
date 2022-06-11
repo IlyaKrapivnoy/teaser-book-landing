@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styles from './BookListSection.module.scss';
 import BookListItem from '../../partials/BookListItem';
 import { bookListItems } from '../../../data/bookListItems';
@@ -21,7 +21,7 @@ const BookListSection = () => {
                 </div>
             </div>
             <div className={styles.bookListWrapper}>
-                <div className='col1'>
+                <div className={styles.col1}>
                     {firstCol.map(({ title, description, id }) => (
                         <BookListItem
                             key={id}
@@ -30,7 +30,7 @@ const BookListSection = () => {
                         />
                     ))}
                 </div>
-                <div className='col2'>
+                <div className={styles.col2}>
                     {secondCol.map(({ title, description, id }) => (
                         <BookListItem
                             key={id}
