@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styles from './BookListSection.module.scss';
 import BookListItem from '../../partials/BookListItem';
+import { bookListItems } from '../../../data/bookListItems';
 
 const BookListSection = () => {
+    const firstCol = bookListItems.filter((item) => item.id <= 3);
+    const secondCol = bookListItems.filter(
+        (item) => item.id > 3 && item.id <= 6
+    );
+
     return (
         <div className='container'>
             <div className={styles.booklistSection}>
@@ -14,11 +20,25 @@ const BookListSection = () => {
                     </span>
                 </div>
             </div>
-            <div className='wrapper'>
-                <BookListItem
-                    title='Design principles'
-                    description='Tips on scouting the city and making the most out of your three-month tourist visa.'
-                />
+            <div className={styles.bookListWrapper}>
+                <div className='col1'>
+                    {firstCol.map(({ title, description, id }) => (
+                        <BookListItem
+                            key={id}
+                            title={title}
+                            description={description}
+                        />
+                    ))}
+                </div>
+                <div className='col2'>
+                    {secondCol.map(({ title, description, id }) => (
+                        <BookListItem
+                            key={id}
+                            title={title}
+                            description={description}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     );
