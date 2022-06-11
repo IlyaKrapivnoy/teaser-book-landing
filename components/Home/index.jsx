@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
 import { useSession, signIn } from 'next-auth/react';
-import PresentationalSection from '../Parts/PresentationalSection/PresentationalSection';
-import AboutSection from '../Parts/AboutSection';
-import BookListSection from '../Parts/BookListSection';
+import PresentationalSection from '../Sections/PresentationalSection/PresentationalSection';
+import AboutSection from '../Sections/AboutSection';
+import BookListSection from '../Sections/BookListSection';
 
 function Home() {
     const { status } = useSession();
