@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
-import Layout from '../components/Layout';
+import Layout from '../components/frame/Layout';
 import '../styles/main.scss';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {

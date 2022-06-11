@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './Header.module.scss';
-import { MAIN_PAGE_FOR_ME } from '../../paths';
-import Icon from '../../icons';
-import NavbarItems from '../Navbar/NavbarItems';
+import { MAIN_PAGE_FOR_ME } from '../../../paths';
+import Icon from '../../../icons';
+import NavbarItems from '../../partials/Navbar/NavbarItems';
 
 const Header = () => {
     return (

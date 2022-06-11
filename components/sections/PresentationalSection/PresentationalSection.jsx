@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import BookCoverImg from '../../../public/book-cover.png';
-import Button from '../../Buttons/Button';
-import buttonStyles from '../../Buttons/Button/Button.module.scss';
+import Button from '../../Partials/Buttons/Button';
+import buttonStyles from '../../Partials/Buttons/Button/Button.module.scss';
 
 const PresentationalSection = () => {
     return (

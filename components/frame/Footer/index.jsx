@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './Footer.module.scss';
-import Icon from '../../icons';
-import socialIconsItems from '../../data/socialIconsItems';
-import NavbarItems from '../Navbar/NavbarItems';
+import Icon from '../../../icons';
+import socialIconsItems from '../../../data/socialIconsItems';
+import NavbarItems from '../../partials/Navbar/NavbarItems';
 
 const Footer = () => {
     return (
