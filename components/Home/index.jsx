@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useSession, signIn } from 'next-auth/react';
 import PresentationalSection from '../Parts/PresentationalSection/PresentationalSection';
 import AboutSection from '../Parts/AboutSection';
+import BookListSection from '../Parts/BookListSection';
 
 function Home() {
     const { status } = useSession();
@@ -30,6 +31,7 @@ function Home() {
             <main>
                 <PresentationalSection />
                 <AboutSection />
+                <BookListSection />
             </main>
         </div>
     );

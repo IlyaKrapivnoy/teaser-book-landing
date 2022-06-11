@@ -7,26 +7,26 @@ const AboutSection = () => {
     return (
         <div className='container'>
             <div className={cn('wrapper', 'wrapperReverese')}>
-                <div className={'picturePart'}>
+                <div className='picturePart'>
                     <Image
                         src={KindleImg}
-                        alt={'Kindle'}
+                        alt='Kindle'
                         width={400}
                         height={400}
                     />
                 </div>
-                <div className={'textPart'}>
-                    <p className={'supText'}>
+                <div className='textPart'>
+                    <p className='supText'>
                         Very high <span>resolution!</span>
                     </p>
                     <h2>About The Book</h2>
-                    <p className={'subText'}>
+                    <p className='subText'>
                         This lovely, well-written book is concerned with
                         creating typography and is essential for professionals
                         who regularly work for clients.
                     </p>
                     <h3>More than 10+ award achieved</h3>
-                    <p className={'subText'}>
+                    <p className='subText'>
                         Fugit ratione, repellendus, dignissimos, ducimus
                         voluptatem, quos.
                     </p>

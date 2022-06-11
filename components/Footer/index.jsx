@@ -8,7 +8,7 @@ import NavbarItems from '../Navbar/NavbarItems';
 const Footer = () => {
     return (
         <div className={styles.footerWrapper}>
-            <div className={'container'}>
+            <div className='container'>
                 <div className={styles.footer}>
                     <div className={styles.top}>
                         <NavbarItems
