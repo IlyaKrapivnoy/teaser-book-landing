@@ -24,9 +24,14 @@
         "react"
     ],
     "rules": {
+        "no-var": "error",
+        "no-unused-vars": "off",
+        "no-multi-spaces": "error",
+        "no-use-before-define": "error",
         "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
         "import/prefer-default-export": "off",
+        "prefer-arrow-callback": "error",
         "import/order": [
             "error",
             {
