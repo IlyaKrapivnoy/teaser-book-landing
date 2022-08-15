@@ -31,3 +31,32 @@ $hoverBlue: $blue;
 // Other
 $cursorColor: $blue;
 
+// atomic classes
+$positions: (relative, sticky, static, fixed, absolute);
+$displays: (flex, inline, block, inline-flex, inline-block, grid, none);
+$aligns-items: (center, flex-start, flex-end, baseline, stretch);
+$justify-contents: (center, flex-end, space-between, space-around, space-evenly);
+
+@each $position in $positions {
+  .position-#{$position} {
+    position: $position;
+  }
+}
+
+@each $display in $displays {
+  .display-#{$display} {
+    display: $display;
+  }
+}
+
+@each $justify-content in $justify-contents {
+  .justify-#{$justify-content} {
+    justify-content: $justify-content;
+  }
+}
+
+@each $align-items in $aligns-items {
+  .align-#{$align-items} {
+    align-items: $align-items;
+  }
+}
