@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import cn from 'classnames';
 import styles from './Footer.module.scss';
 import Icon from '../../../icons';
 import socialIconsItems from '../../../data/socialIconsItems';
@@ -17,7 +18,12 @@ const Footer = () => {
                         />
                     </div>
                     <div className={styles.bottom}>
-                        <div className={styles.icons}>
+                        <div
+                            className={cn(
+                                'display-flex',
+                                'justify-space-between'
+                            )}
+                        >
                             {socialIconsItems.map(
                                 ({ href, logoClassName, name, sizes, id }) => (
                                     <Link href={href} key={id}>
