@@ -5,6 +5,7 @@ import styles from './Footer.module.scss';
 import Icon from '../../../icons';
 import socialIconsItems from '../../../data/socialIconsItems';
 import NavbarItems from '../../partials/Navbar/NavbarItems';
+import Copyright from '../Footer/Copyright';
 
 const Footer = () => {
     return (
@@ -37,10 +38,7 @@ const Footer = () => {
                                 )
                             )}
                         </div>
-                        <p className={styles.copyright}>
-                            &#169; Copyright Ilya K. All rights reserved{' '}
-                            {new Date().getFullYear()}
-                        </p>
+                        <Copyright />
                     </div>
                 </div>
             </div>
