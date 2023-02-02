@@ -1,10 +1,8 @@
 import React from 'react';
-import Link from 'next/link';
 import styles from './Navbar.module.scss';
-import { MAIN_PAGE_FOR_ME } from '../../../paths';
-import Icon from '../../../icons';
 import NavList from './NavList';
 import SignInAndOut from './SignInAndOut';
+import NavLogo from './NavLogo';
 
 const Navbar = () => {
     const navbarItems = [
@@ -19,16 +17,7 @@ const Navbar = () => {
         <div className={styles.navbarWrapper}>
             <div className='container'>
                 <div className={styles.navbar}>
-                    <div className={styles.logo}>
-                        <Link href={MAIN_PAGE_FOR_ME}>
-                            <a className={styles.logo}>
-                                <Icon
-                                    name={Icon.LOGO}
-                                    sizes={{ height: 24, width: 'auto' }}
-                                />
-                            </a>
-                        </Link>
-                    </div>
+                    <NavLogo />
                     <NavList data={navbarItems} />
                     <SignInAndOut />
                 </div>
