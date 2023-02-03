@@ -6,7 +6,7 @@ import KindleImg from '../../../public/kindle.png';
 const AboutSection = () => {
     return (
         <div className='container'>
-            <div className={cn('wrapper', 'wrapperReverese')}>
+            <div className={cn('wrapper', 'wrapperReverse')}>
                 <div className='picturePart'>
                     <Image
                         src={KindleImg}

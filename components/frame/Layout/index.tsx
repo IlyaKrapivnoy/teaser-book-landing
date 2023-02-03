@@ -5,13 +5,13 @@ import styles from './Layout.module.scss';
 
 const Layout = ({ children }: { children: ReactNode }) => {
     return (
-        <div>
+        <>
             <div className={styles.contentWrapper}>
                 <Navbar />
                 {children}
             </div>
             <Footer />
-        </div>
+        </>
     );
 };
 

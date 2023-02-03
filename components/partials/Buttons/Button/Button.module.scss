@@ -6,7 +6,7 @@
   background-color: $red;
   border: 2px solid transparent;
   min-width: 260px;
-  padding: 10px 50px;
+  padding: toRem(10 50);
   border-radius: 15px;
   color: $textWhite;
   font-weight: 700;
