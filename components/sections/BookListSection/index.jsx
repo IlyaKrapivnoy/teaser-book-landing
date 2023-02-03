@@ -4,10 +4,8 @@ import BookListItem from '../../partials/BookListItem';
 import { bookListItems } from '../../../data/bookListItems';
 
 const BookListSection = () => {
-    const firstCol = bookListItems.filter((item) => item.id <= 3);
-    const secondCol = bookListItems.filter(
-        (item) => item.id > 3 && item.id <= 6
-    );
+    const firstCol = bookListItems.slice(0, 3);
+    const secondCol = bookListItems.slice(3, 6);
 
     return (
         <div className='container'>
@@ -22,7 +20,7 @@ const BookListSection = () => {
             </div>
             <div className={styles.bookListWrapper}>
                 <div className={styles.col1}>
-                    {firstCol.map(({ title, description, id }) => (
+                    {firstCol?.map(({ title, description, id }) => (
                         <BookListItem
                             key={id}
                             title={title}
@@ -31,7 +29,7 @@ const BookListSection = () => {
                     ))}
                 </div>
                 <div className={styles.col2}>
-                    {secondCol.map(({ title, description, id }) => (
+                    {secondCol?.map(({ title, description, id }) => (
                         <BookListItem
                             key={id}
                             title={title}

@@ -118,7 +118,7 @@ a {
   }
 }
 
-.wrapperReverese {
+.wrapperReverse {
   @include media-breakpoint-down(md) {
     flex-direction: column;
   }
