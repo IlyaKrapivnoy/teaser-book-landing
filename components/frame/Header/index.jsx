@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Header.module.scss';
 import NavbarItems from '../../partials/Navbar/NavbarItems';
 import MailLogo from './MailLogo';
+import LogIn from './LogIn';
 
 const Header = () => {
     return (
@@ -13,9 +14,7 @@ const Header = () => {
                         classNameUl={styles.list}
                         classNameLi={styles.listItem}
                     />
-                    <div className={styles.btnSection}>
-                        <button className='loginBtn'>Log In</button>
-                    </div>
+                    <LogIn />
                 </div>
             </div>
         </div>
