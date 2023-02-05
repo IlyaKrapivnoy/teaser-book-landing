@@ -19,7 +19,7 @@ function Home() {
     }
 
     return (
-        <div>
+        <>
             <Head>
                 <title>Book Teaser Website</title>
                 <meta
@@ -33,7 +33,7 @@ function Home() {
                 <AboutSection />
                 <BookListSection />
             </main>
-        </div>
+        </>
     );
 }
 
