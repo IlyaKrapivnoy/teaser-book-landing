@@ -1,20 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import cn from 'classnames';
+import { SocialIconsItemsProps } from 'types';
 import Icon from '../../../icons';
-
-interface SocialIconsItemsProps {
-    socialIconsItems: {
-        href: string;
-        logoClassName: string;
-        name: string;
-        sizes: {
-            height: number;
-            width: number;
-        };
-        id: number;
-    }[];
-}
 
 const SocialIconsItems: React.FC<SocialIconsItemsProps> = ({
     socialIconsItems,

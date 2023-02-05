@@ -1,11 +1,7 @@
 import React from 'react';
+import { BookListItemProps } from 'types';
 import Icon from '../../../icons';
 import styles from './BookListItem.module.scss';
-
-type BookListItemProps = {
-    title: string;
-    description: string;
-};
 
 const BookListItem: React.FC<BookListItemProps> = ({ title, description }) => (
     <div className={styles.card}>

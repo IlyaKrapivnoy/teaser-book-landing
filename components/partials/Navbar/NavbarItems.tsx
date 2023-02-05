@@ -1,10 +1,6 @@
 import React from 'react';
+import { NavbarItemsProps } from 'types';
 import navbarItems from '../../../data/navItems';
-
-interface NavbarItemsProps {
-    classNameUl: string;
-    classNameLi: string;
-}
 
 const NavbarItems: React.FC<NavbarItemsProps> = ({
     classNameUl,
