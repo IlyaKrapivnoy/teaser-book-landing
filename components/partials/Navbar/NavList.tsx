@@ -1,6 +1,7 @@
 import React from 'react';
+import { NavListProps } from 'types';
 
-const NavList = ({ data }) => {
+const NavList: React.FC<NavListProps> = ({ data }) => {
     return (
         <div className={styles.navbar}>
             <ul className={styles.list}>

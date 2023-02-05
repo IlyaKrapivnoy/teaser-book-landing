@@ -1,8 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import cn from 'classnames';
+import { SocialIconsItemsProps } from 'types';
 import Icon from '../../../icons';
 
-const SocialIconsItems = ({ socialIconsItems }) => {
+const SocialIconsItems: React.FC<SocialIconsItemsProps> = ({
+    socialIconsItems,
+}) => {
     return (
         <div className={cn('display-flex', 'justify-space-between')}>
             {socialIconsItems.map(

@@ -1,7 +1,11 @@
 import React from 'react';
+import { NavbarItemsProps } from 'types';
 import navbarItems from '../../../data/navItems';
 
-const NavbarItems = ({ classNameUl, classNameLi }) => {
+const NavbarItems: React.FC<NavbarItemsProps> = ({
+    classNameUl,
+    classNameLi,
+}) => {
     return (
         <ul className={classNameUl}>
             {navbarItems.map((navItem) => (
