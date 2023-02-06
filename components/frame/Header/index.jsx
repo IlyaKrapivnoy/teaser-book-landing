@@ -4,21 +4,19 @@ import NavbarItems from '../../partials/Navbar/NavbarItems';
 import MailLogo from './MailLogo';
 import LogIn from './LogIn';
 
-const Header = () => {
-    return (
-        <div className={styles.headerWrapper}>
-            <div className={'container'}>
-                <div className={styles.header}>
-                    <MailLogo />
-                    <NavbarItems
-                        classNameUl={styles.list}
-                        classNameLi={styles.listItem}
-                    />
-                    <LogIn />
-                </div>
+const Header = () => (
+    <div className={styles.headerWrapper}>
+        <div className='container'>
+            <div className={styles.header}>
+                <MailLogo />
+                <NavbarItems
+                    classNameUl={styles.list}
+                    classNameLi={styles.listItem}
+                />
+                <LogIn />
             </div>
         </div>
-    );
-};
+    </div>
+);
 
 export default Header;

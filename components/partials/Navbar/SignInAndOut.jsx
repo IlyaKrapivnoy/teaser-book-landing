@@ -15,15 +15,13 @@ const SignInAndOut = () => {
         signOut();
     };
 
+    const btnStyles = classNames(
+        styles.btnSection,
+        !session && status === 'loading' ? styles.loading : styles.loaded
+    );
+
     return (
-        <div
-            className={classNames(
-                styles.btnSection,
-                !session && status === 'loading'
-                    ? styles.loading
-                    : styles.loaded
-            )}
-        >
+        <div className={btnStyles}>
             {!session && status !== 'authenticated' && (
                 <Link href='/api/auth/signin'>
                     <a className='signinBtn' onClick={(e) => handleSignIn(e)}>
