@@ -9,7 +9,7 @@ const BookListSection = () => {
 
     return (
         <div className='container'>
-            <div className={styles.booklistSection}>
+            <div className={styles.bookListSection}>
                 <div className='titleField'>
                     <h3 className='title'>What&apos;s inside the book</h3>
                     <span className='description'>
