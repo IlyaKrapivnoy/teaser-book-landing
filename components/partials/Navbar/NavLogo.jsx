@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Icon from '../../../icons';
 import { MAIN_PAGE_FOR_ME } from '../../../paths';
+import styles from './Navbar.module.scss';
 
 const NavLogo = () => (
     <div className={styles.logo}>

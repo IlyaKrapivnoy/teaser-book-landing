@@ -7,13 +7,12 @@ const NavbarItems: React.FC<NavbarItemsProps> = ({
     classNameLi,
 }) => (
     <ul className={classNameUl}>
-        {navbarItems.map((navItem) => (
-            <li key={navItem.id} className={classNameLi}>
-                {navItem.title}
+        {navbarItems.map(({ id, title }) => (
+            <li key={id} className={classNameLi}>
+                {title}
             </li>
         ))}
     </ul>
 );
-
 
 export default NavbarItems;
